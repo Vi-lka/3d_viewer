@@ -1,0 +1,7 @@
+.headerTitle {
+    display: flex;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 64px;
+    justify-content: center;
+}

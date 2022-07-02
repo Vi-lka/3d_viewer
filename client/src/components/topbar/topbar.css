@@ -1,0 +1,40 @@
+.top {
+    width: 100%;
+    height: 50px;
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cera Pro';
+    font-weight: 600;
+}
+
+.topList {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topListItem {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Cera Pro';
+    font-weight: 400;
+    font-size: 18px;
+    color: #f0f0f0;
+    text-transform:uppercase;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.topListItem:last-child {
+    margin-right: 0px;
+}
+
+.topListItem:hover,
+.topListItem:focus {
+    color: #e83c07;
+    transition: ease-in-out 0.2s;
+}

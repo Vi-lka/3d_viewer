@@ -1,0 +1,178 @@
+.singlePost {
+    width: 100%;
+}
+
+.singlePostWrapper {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.modelWrapperSingle {
+    width: 100vw;
+    height: calc(100vh - 50px);
+    float: right;
+    background: #aaaaaa;
+    background: linear-gradient(0deg, rgba(32,32,32,1) 0%, rgba(240,240,240,0.8) 50%, rgba(32,32,32,1) 100%);
+}
+
+.modelWrapperSingleEdit {
+    width: 80%;
+    height: calc(100vh - 50px);
+    float: right;
+    background: #aaaaaa;
+    background: linear-gradient(0deg, rgba(32,32,32,1) 0%, rgba(240,240,240,0.8) 50%, rgba(32,32,32,1) 100%);
+}
+
+.singlePostTitle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    font-family: "Cera Pro";
+    font-size: 36px;
+    text-align: center;
+    color: #f0f0f0;
+    z-index: 100;
+}
+
+.singlePostInfo {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    font-family: "DIN Pro";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #f0f0f0;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 15px;
+    border-radius: 15px;
+    white-space: pre-line;
+    z-index: 100;
+}
+
+.singlePostInfo::first-letter {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.singlePostEdit {
+    position: absolute;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.singlePostIcon {
+    width: 32px;
+    height: 32px;
+    margin-left: 25px;
+    border-radius: 5px;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.singlePostIcon:last-child {
+    margin-left: 30px;
+}
+
+.singlePostIcon:hover,
+.singlePostIcon:focus {
+    border-radius: 10px;
+    padding: 5px;
+    background-color:#e83c07;
+    transition: ease-in-out 0.2s;
+}
+
+.fileInputLabel {
+    font-family: "Cera Pro";
+    font-size: 20px;
+    font-weight: 500;
+    color: #f0f0f0;
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #e83c07;
+    align-self: center;
+}
+
+.fileInputIcon {
+    width: 40px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.fileInputLabel:hover .fileInputIcon,
+.fileInputLabel:focus .fileInputIcon {
+    background-color: #e83c07;
+    border-radius: 15px;
+    padding: 9px;
+    transition: ease-in-out 0.2s;
+}
+
+.singlePostImg {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.singlePostInfoInput {
+    width: 100%;
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 1.5;
+    min-height: 180px;
+}
+
+.singlePostSubmit {
+    font-family: "Cera Pro";
+    color: #202020;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 34px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    transition: ease-in-out 0.2s;
+}
+
+.singlePostSubmit:hover,
+.singlePostSubmit:focus {
+    color: #f0f0f0;
+    padding: 14px 40px;
+    background-color: #e83c07;
+    transition: ease-in-out 0.2s;
+}
+
+@media only screen and (max-width:720px) {
+    .singlePostTitle {
+        left: 0;
+        transform: translateX(0%);
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .singlePostInfo {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    
+    .singlePostInfo::first-letter {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

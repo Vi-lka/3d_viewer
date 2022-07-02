@@ -1,0 +1,63 @@
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loginTitle {
+    font-family: "Cera Pro";
+    font-size: 48px;
+    color: #f0f0f0;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.loginForm>label {
+    font-family: "Cera Pro";
+    font-size: 18px;
+    color: #f0f0f0;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.loginInput {
+    font-family: "DIN Pro";
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+.loginButton {
+    font-family: "Cera Pro";
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: #202020;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.loginButton:hover {
+    color: #f0f0f0;;
+    background-color:#e83c07;
+    transition: ease-in-out 0.2s;
+}
+
+.loginButton:disabled {
+    cursor:not-allowed;
+    color: #f0f0f0;;
+    background-color:#00000056;
+}

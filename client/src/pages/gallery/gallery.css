@@ -1,0 +1,67 @@
+body {
+    overflow-y: scroll; /* прокрутка по вертикали */
+    scrollbar-color: #202020 #f0f0f0;
+    scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #8b8b8b;
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background-color: #f0f0f0;
+    border-radius: 100px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* background: #aaaaaa;
+    background: linear-gradient(-45deg, rgba(32,32,32,1) 0%, rgba(240,240,240,0.8) 50%, rgba(32,32,32,1) 100%); */
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.addPost {
+    text-align: center;
+}
+
+.addPostLabel {
+    font-family: "Cera Pro";
+    font-size: 20px;
+    font-weight: 500;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #e83c07;
+    align-self: center;
+}
+
+.addPostIcon {
+    width: 40px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.addPostLabel:hover .addPostIcon,
+.addPostLabel:focus .addPostIcon {
+    background-color: #e83c07;
+    border-radius: 15px;
+    padding: 9px;
+    transition: ease-in-out 0.2s;
+}

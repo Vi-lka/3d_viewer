@@ -1,0 +1,521 @@
+.edit {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.fileInputLabelStart {
+    font-family: "Cera Pro";
+    font-weight: 500;
+    font-size: 40px;
+    color: #f0f0f0;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 auto;
+    height: calc(100vh - 50px);
+    transition: ease-in-out 0.2s;
+}
+
+.fileInputIconStart {
+    width: 80px;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #202020;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.fileInputLabelStart:hover .fileInputIconStart,
+.fileInputLabelStart:focus .fileInputIconStart {
+    background-color: #e83c07;
+    border-radius: 32px;
+    padding: 15px;
+    transition: ease-in-out 0.2s;
+}
+
+.editForm {
+    width: 20%;
+    min-width: 265px;
+    height: calc(100vh - 50px);
+    padding: 0 20px;
+    padding-top: 25px;
+    background-color: #202020;
+    border-right: 3px solid #202020;
+    overflow-y: scroll; /* прокрутка по вертикали */
+    scrollbar-color: #202020 #f0f0f0;
+    scrollbar-width: thin;
+}
+
+.editForm::-webkit-scrollbar {
+    width: 10px;
+}
+
+.editForm::-webkit-scrollbar-track {
+    background-color: #8b8b8b;
+}
+
+
+.editForm::-webkit-scrollbar-thumb {
+    background-color: #f0f0f0;
+    border-radius: 100px;
+}
+
+.fileInputLabel {
+    font-family: "Cera Pro";
+    font-size: 20px;
+    font-weight: 500;
+    color: #f0f0f0;
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #e83c07;
+    align-self: center;
+}
+
+.fileInputIcon {
+    width: 40px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.fileInputLabel:hover .fileInputIcon,
+.fileInputLabel:focus .fileInputIcon {
+    background-color: #e83c07;
+    border-radius: 15px;
+    padding: 9px;
+    transition: ease-in-out 0.2s;
+}
+
+.editFormGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e83c07;
+    padding-bottom: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.fileInputLabelmap {
+    font-family: "Cera Pro";
+    font-size: 16px;
+    color: #f0f0f0;
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}
+
+.fileInputIconmap {
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: ease-in-out 0.2s;
+}
+
+.fileInputLabelmap:hover .fileInputIconmap,
+.fileInputLabelmap:focus .fileInputIconmap {
+    background-color:#e83c07;
+    padding: 4px;
+    border-radius: 9px;
+    transition: ease-in-out 0.2s;
+}
+
+.fileInputImgmap {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.InputLabelmap {
+    font-family: "Cera Pro";
+    font-size: 16px;
+    color: #f0f0f0;
+    display: flex;
+    align-items:center;
+    margin-top: 25px;
+}
+
+.InputDiv {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+input[type=range].Rangemap {
+    display: inline-block;
+    width: 75%;
+    vertical-align: middle;
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    background: transparent; /* Otherwise white in Chrome */
+    cursor:ew-resize;
+  }
+  
+  /*webkit*/
+  input[type=range].Rangemap::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 16px;
+    background: #e83c07;
+    border: none;
+    box-shadow: 0 0 2px black;
+    margin-top: calc(max((8px - 1px - 1px) * 0.5,0px) - 20px * 0.5);
+  }
+  
+  input[type=range].Rangemap::-webkit-slider-runnable-track {
+    height: 8px;
+    border: 1px solid #b2b2b2;
+    border-radius: 8px;
+    background: #f0f0f0;
+    box-shadow: none;
+  }
+  
+  input[type=range].Rangemap::-webkit-slider-thumb:hover {
+    background: #d33607;
+  }
+  
+  input[type=range].Rangemap:hover::-webkit-slider-runnable-track {
+    background: #e5e5e5;
+    border-color: #9a9a9a;
+  }
+  
+  input[type=range].Rangemap::-webkit-slider-thumb:active {
+    background: #ff4209;
+  }
+  
+  input[type=range].Rangemap:active::-webkit-slider-runnable-track {
+    background: #f5f5f5;
+    border-color: #c1c1c1;
+  }
+  
+  /*mozilla*/
+  input[type=range].Rangemap::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 16px;
+    background: #e83c07;
+    border: none;
+    box-shadow: 0 0 2px black;
+  }
+  
+  input[type=range].Rangemap::-moz-range-track {
+    height: max(calc(8px - 1px - 1px),0px);
+    border: 1px solid #b2b2b2;
+    border-radius: 8px;
+    background: #f0f0f0;
+    box-shadow: none;
+  }
+  
+  input[type=range].Rangemap::-moz-range-thumb:hover {
+    background: #d33607;
+  }
+  
+  input[type=range].Rangemap:hover::-moz-range-track {
+    background: #e5e5e5;
+    border-color: #9a9a9a;
+  }
+  
+  input[type=range].Rangemap::-moz-range-thumb:active {
+    background: #ff4209;
+  }
+  
+  input[type=range].Rangemap:active::-moz-range-track {
+    background: #f5f5f5;
+    border-color: #c1c1c1;
+  }
+  
+  /*ms*/
+  input[type=range].Rangemap::-ms-fill-upper {
+    background: transparent;
+    border-color: transparent;
+  }
+  
+  input[type=range].Rangemap::-ms-fill-lower {
+    background: transparent;
+    border-color: transparent;
+  }
+  
+  input[type=range].Rangemap::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 16px;
+    background: #e83c07;
+    border: none;
+    box-shadow: 0 0 2px black;
+    margin-top: 0;
+    box-sizing: border-box;
+  }
+  
+  input[type=range].Rangemap::-ms-track {
+    height: 8px;
+    border-radius: 8px;
+    background: #f0f0f0;
+    border: 1px solid #b2b2b2;
+    box-shadow: none;
+    box-sizing: border-box;
+  }
+  
+  input[type=range].Rangemap::-ms-thumb:hover {
+    background: #d33607;
+  }
+  
+  input[type=range].Rangemap:hover::-ms-track {
+    background: #e5e5e5;
+    border-color: #9a9a9a;
+  }
+  
+  input[type=range].Rangemap::-ms-thumb:active {
+    background: #ff4209;
+  }
+  
+  input[type=range].Rangemap:active::-ms-track {
+    background: #f5f5f5;
+    border-color: #c1c1c1;
+  }
+
+.Inputmap {
+    font-family: "Cera Pro";
+    font-size: 14px;
+    color:#202020;
+    display: inline-block;
+    width: 20%;
+    min-width: 45px;
+    height: 30px;
+    vertical-align: middle;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 5px;
+    background-color:#f0f0f0;
+}
+
+.ScreenShotPhoto {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.ScreenShot {
+    display: flex;
+    width: auto;
+    height: 46px;
+    align-items: center;
+    padding: 4px 15px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    color: #f0f0f0;
+    background-color:#e83c07;
+    font-family: "Cera Pro";
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.ScreenShotIcon {
+    width: 38px;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.ScreenShot:hover,
+.ScreenShot:focus {
+    padding: 4px 24px;
+    transition: ease-in-out 0.2s;
+}
+
+.ScreenShot:hover .ScreenShotIcon,
+.ScreenShot:focus .ScreenShotIcon {
+    background-color:#202020;
+    padding: 8px;
+    border-radius: 10px;
+    transition: ease-in-out 0.2s;
+}
+
+.Description {
+    width: max-content;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.DescriptionTitle {
+    font-family: "Cera Pro";
+    font-size: 14px;
+    font-weight: 500;
+    color:#f0f0f0;
+    width: 100%;
+    max-width: 240px;
+    margin-bottom: 10px;
+}
+
+.DescriptionInfo {
+    font-family: "DIN Pro";
+    font-size: 12px;
+    font-weight: 300;
+    color:#f0f0f0;
+    width: 100%;
+    max-width: 240px;
+    margin-bottom: 25px;
+    white-space: pre-line;
+}
+
+.OpenDescriptionEdit {
+    display: flex;
+    width: auto;
+    height: 46px;
+    align-items: center;
+    padding: 4px 15px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    color: #f0f0f0;
+    background-color:#e83c07;
+    font-family: "Cera Pro";
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.OpenDescriptionEditIcon {
+    width: 38px;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.OpenDescriptionEdit:hover,
+.OpenDescriptionEdit:focus {
+    padding: 4px 24px;
+    transition: ease-in-out 0.2s;
+}
+
+.OpenDescriptionEdit:hover .OpenDescriptionEditIcon,
+.OpenDescriptionEdit:focus .OpenDescriptionEditIcon {
+    background-color:#202020;
+    padding: 8px;
+    border-radius: 10px;
+    transition: ease-in-out 0.2s;
+}
+
+.DescriptionEdit {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-color:#202020cc;
+    z-index: 100;
+}
+
+.DescriptionEditClose {
+    position: absolute;
+    width: 40px;
+    right: 20px;
+    border-radius: 5px;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.DescriptionEditClose:hover,
+.DescriptionEditClose:focus {
+    border-radius: 10px;
+    padding: 5px;
+    background-color:#e83c07;
+    transition: ease-in-out 0.2s;
+}
+
+.titleInput{
+    font-family: "Cera Pro";
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius:10px;
+    width: 80%;
+}
+
+.textInput {
+    font-family: "DIN Pro";
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius:10px;
+    width: 80%;
+}
+
+.titleInput::placeholder,
+.textInput::placeholder {
+    font-size: 30px;
+    text-align: center;
+}
+
+.titleInput {
+    text-align: center;
+}
+
+.textInput {
+    min-height: 180px;
+}
+
+.editFormSubmit {
+    font-family: "Cera Pro";
+    color: #202020;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 34px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    transition: ease-in-out 0.2s;
+}
+
+.editFormSubmit:hover,
+.editFormSubmit:focus {
+    color: #f0f0f0;
+    padding: 14px 40px;
+    background-color: #e83c07;
+    transition: ease-in-out 0.2s;
+}
+
+.modelWrapper {
+    width: 80%;
+    height: calc(100vh - 50px);
+    float: right;
+    background: #aaaaaa;
+    background: linear-gradient(0deg, rgba(32,32,32,1) 0%, rgba(240,240,240,0.8) 50%, rgba(32,32,32,1) 100%);
+}
