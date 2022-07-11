@@ -235,13 +235,24 @@ export default function SinglePost({post}: {post:any}, {key}: {key:any}) {
     }
   }
 
+  function makeid(length: number) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * 
+      charactersLength));
+    }
+    return result;
+  }
+
   function makeScreenshot() {
     setScreenshotChange(true)
     var imgData;
 	  var strMime = "image/png";
     imgData = gl.domElement.toDataURL(strMime);
     setScreenshotURL(`${imgData}`)
-    dataURLtoFile(`${imgData}`, "_screenshot.png")
+    dataURLtoFile(`${imgData}`, `${makeid(7)}_screenshot.png`)
   }
 
   function dataURLtoFile(dataurl: any, filename:string) {

@@ -7,7 +7,6 @@
     margin: 35px 0;
     text-align: center;
 }
-
 /* .post:nth-child(2n) {
     border-left: 3px solid #e83c07;
 } */
@@ -15,7 +14,7 @@
 .postImg {
     width: 35vw;
     height: 20vw;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 20px;
     cursor: pointer;
     background: #aaaaaa;

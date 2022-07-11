@@ -187,11 +187,22 @@ export default function Edit() {
     }
   }
 
+  function makeid(length: number) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * 
+      charactersLength));
+    }
+    return result;
+  }
+
   function makeScreenshot() {
     var imgData;
 	  var strMime = "image/png";
     imgData = gl.domElement.toDataURL(strMime);
-    dataURLtoFile(`${imgData}`, "_screenshot.png")
+    dataURLtoFile(`${imgData}`, `${makeid(7)}_screenshot.png`)
   }
 
   function dataURLtoFile(dataurl: any, filename:string) {

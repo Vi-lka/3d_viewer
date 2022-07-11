@@ -3,7 +3,7 @@ const router = require("express").Router()
 const User = require("../models/User")
 const Category = require("../models/Category")
 const bcrypt = require("bcrypt")
-
+ 
 //CREATE CATEGORY
 router.post("/", async function (req:Request, res:Response) {
     const newCat = new Category(req.body)
