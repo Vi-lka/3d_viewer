@@ -21,8 +21,11 @@ export default function Single() {
   },[path])
 
   return (
-    // <div className="single">
-    //   <SinglePost post={post}/>
-    // </div>
+    <>
+    <div className="single">
+      <SinglePost post={post}/>
+    </div>
+    <div></div>
+    </>
   )
 }
