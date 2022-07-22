@@ -21,11 +21,17 @@ export default function Single() {
   },[path])
 
   return (
+<<<<<<< HEAD
     <>
     <div className="single">
       <SinglePost post={post}/>
     </div>
     <div></div>
     </>
+=======
+    <div className="single">
+      <SinglePost post={post}/>
+    </div>
+>>>>>>> fa2a6aaac0807b00030f88d6dd9c704c92ab7530
   )
 }
