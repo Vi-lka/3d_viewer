@@ -26,7 +26,7 @@ export default function Home() {
             <SceneHome />
             <OrbitControls enablePan={false} enableZoom={false}  />
           </Canvas>
-          {/* <OverlayHome fill={fill} /> */}
+          <OverlayHome fill={fill} />
         </a.main>
       </div>
     </>
